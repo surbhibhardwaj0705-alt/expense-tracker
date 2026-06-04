@@ -1,0 +1,38 @@
+<form
+[formGroup]="transactionForm"
+class="transaction-form"
+(ngSubmit)="onSubmit()">
+<input
+type="text"
+class="form-control mb-3"
+formControlName="title"
+placeholder="Title"/>
+
+<input
+type="number"
+class="form-control mb-3"
+formControlName="amount"
+placeholder="Amount"/>
+
+<input
+type="text"
+class="form-control mb-3"
+formControlName="category"
+placeholder="Category"/>
+
+<select
+class="form-control mb-3"
+formControlName="type">
+<option value="Income">Income</option>
+<option value="Expense">Expense</option>
+</select>
+
+<input
+type="date"
+class="form-control mb-3"
+formControlName="date"
+placeholder="Date"/>
+
+<button type="submit" class="btn btn-primary">Save</button>
+
+</form>

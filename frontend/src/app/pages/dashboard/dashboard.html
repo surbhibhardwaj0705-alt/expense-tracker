@@ -1,0 +1,26 @@
+<div class="container mt-4">
+
+  <app-summary-cards
+     [totalIncome]="totalIncome"
+  [totalExpense]="totalExpense"
+  [balance]="balance">
+  </app-summary-cards>
+
+  <div class="row mt-4">
+
+    <div class="col-md-4">
+      <app-transaction-form
+       (saveTransaction)="addTransaction($event)"></app-transaction-form>
+    </div>
+
+    <div class="col-md-8">
+      <app-transaction-list></app-transaction-list>
+    </div>
+
+  </div>
+
+  <div class="mt-4">
+    <app-charts></app-charts>
+  </div>
+
+</div>

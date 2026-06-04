@@ -1,0 +1,21 @@
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.income-card {
+  background-color: #d4edda;
+}
+
+.expense-card {
+  background-color: #f8d7da;
+}
+
+.balance-card {
+  background-color: #d1ecf1;
+}
+
+h2 {
+  font-weight: bold;
+}
